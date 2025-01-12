@@ -1,0 +1,92 @@
+<!-- primary button -->
+<!--[if mso]>
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left">
+  <tr>
+    <td>
+      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.transamerica.com" style="height:40px;v-text-anchor:middle;width:240px;" arcsize="50%" strokecolor="#ffffff" fillcolor="#000000">
+        <w:anchorlock/>
+        <center style="color:#ffffff !important;font-family:Arial,sans-serif;font-size:14px;">
+          Primary CTA &nbsp;&nbsp; → &nbsp;
+        </center>
+      </v:roundrect>
+    </td>
+  </tr>
+</table>
+<![endif]-->
+
+<!-- secondary button -->
+
+<!--[if mso]>
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left">
+  <tr>
+    <td>
+      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.transamerica.com" style="height:40px;v-text-anchor:middle;width:240px;" arcsize="50%" strokecolor="#000000" fillcolor="#ffffff">
+        <w:anchorlock/>
+        <center style="color:#000000 !important;font-family:Arial,sans-serif;font-size:14px;">
+          Secondary CTA &nbsp;&nbsp; → &nbsp;
+        </center>
+      </v:roundrect>
+    </td>
+  </tr>
+</table>
+<![endif]-->
+
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+
+<style>
+	@media (prefers-color-scheme: dark) {
+  .cta-btn-primary {
+    color: #ffffff !important;
+  }
+  .cta-btn-secondary {
+    color: #000000 !important;
+  }
+}
+
+/* Outlook Dark Mode Styles */
+[data-ogsc] .cta-btn-primary,
+[data-ogsc] a.cta-btn-primary,
+[data-ogsc][data-ogsc-mode="dark"] .cta-btn-primary,
+[data-ogsc][data-ogsc-mode="dark"] a.cta-btn-primary {
+    color: #ffffff !important;
+    background-color: #000000 !important;
+    border-color: #ffffff !important;
+}
+
+[data-ogsc] .cta-btn-secondary,
+[data-ogsc] a.cta-btn-secondary,
+[data-ogsc][data-ogsc-mode="dark"] .cta-btn-secondary,
+[data-ogsc][data-ogsc-mode="dark"] a.cta-btn-secondary {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+    border-color: #000000 !important;
+}
+
+/* Additional protection for text colors in dark mode */
+[data-ogsc] .force-light-text,
+[data-ogsc][data-ogsc-mode="dark"] .force-light-text {
+    color: #ffffff !important;
+}
+
+[data-ogsc] .force-dark-text,
+[data-ogsc][data-ogsc-mode="dark"] .force-dark-text {
+    color: #000000 !important;
+}
+
+/* Outlook VML button text color enforcement */
+[data-ogsc] v\:roundrect,
+[data-ogsc][data-ogsc-mode="dark"] v\:roundrect {
+    behavior: url(#default#VML);
+}
+
+[data-ogsc] .cta-btn-primary v\:roundrect center,
+[data-ogsc][data-ogsc-mode="dark"] .cta-btn-primary v\:roundrect center {
+    color: #ffffff !important;
+}
+
+[data-ogsc] .cta-btn-secondary v\:roundrect center,
+[data-ogsc][data-ogsc-mode="dark"] .cta-btn-secondary v\:roundrect center {
+    color: #000000 !important;
+}
+</style>
