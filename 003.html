@@ -2,12 +2,10 @@
 <html>
 
 <head>
-	<meta name="robots" content="noindex, nofollow" />
-	<meta name="referrer" content="no-referrer" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="color-scheme" content="light">
-	<meta name="supported-color-schemes" content="light">
+	<meta name="color-scheme" content="light dark">
+	<meta name="supported-color-schemes" content="light dark">
 	<link rel="shortcut icon"
 		href="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/1da3463f-6cd9-47d6-8666-8907d948587f.png"
 		type="image/vnd.microsoft.icon" />
@@ -168,9 +166,72 @@
 			.force-dark-text {
 				color: #000000 !important;
 			}
+
+			.cta-btn-primary {
+				color: #ffffff !important;
+			}
+
+			.cta-btn-secondary {
+				color: #000000 !important;
+			}
+		}
+
+		/* Outlook Dark Mode Styles */
+		[data-ogsc] .cta-btn-primary,
+		[data-ogsc] a.cta-btn-primary,
+		[data-ogsc][data-ogsc-mode="dark"] .cta-btn-primary,
+		[data-ogsc][data-ogsc-mode="dark"] a.cta-btn-primary {
+			color: #ffffff !important;
+			background-color: #000000 !important;
+			border-color: #ffffff !important;
+		}
+
+		[data-ogsc] .cta-btn-secondary,
+		[data-ogsc] a.cta-btn-secondary,
+		[data-ogsc][data-ogsc-mode="dark"] .cta-btn-secondary,
+		[data-ogsc][data-ogsc-mode="dark"] a.cta-btn-secondary {
+			color: #000000 !important;
+			background-color: #ffffff !important;
+			border-color: #000000 !important;
+		}
+
+		/* Additional protection for text colors in dark mode */
+		[data-ogsc] .force-light-text,
+		[data-ogsc][data-ogsc-mode="dark"] .force-light-text {
+			color: #ffffff !important;
+		}
+
+		[data-ogsc] .force-dark-text,
+		[data-ogsc][data-ogsc-mode="dark"] .force-dark-text {
+			color: #000000 !important;
+		}
+
+		/* Outlook VML button text color enforcement */
+		[data-ogsc] v\:roundrect,
+		[data-ogsc][data-ogsc-mode="dark"] v\:roundrect {
+			behavior: url(#default#VML);
+		}
+
+		[data-ogsc] .cta-btn-primary v\:roundrect center,
+		[data-ogsc][data-ogsc-mode="dark"] .cta-btn-primary v\:roundrect center {
+			color: #ffffff !important;
+		}
+
+		[data-ogsc] .cta-btn-secondary v\:roundrect center,
+		[data-ogsc][data-ogsc-mode="dark"] .cta-btn-secondary v\:roundrect center {
+			color: #000000 !important;
 		}
 	</style>
-	<!--[if mso]> <style> li { margin-left:27px !important; } .outlook-list-fix { margin-left: -25px !important; } </style> <![endif]-->
+	<!--[if mso]>
+<style>
+li {
+margin-left:27px !important;
+}
+.outlook-list-fix {
+margin-left: -25px !important;
+}
+</style>
+<![endif]-->
 	<style type="text/css">
 		@media only screen and (max-width: 480px) {
 			.text-align-left-desktop-align-center-mobile {
@@ -382,7 +443,13 @@
 			}
 		}
 	</style>
-	<!--[if mso]> <style type="text/css"> /* Begin Outlook Font Fix */               body, table, td {                  font-family : Arial, helvetica, sans-serif;                  line-height : 115%;                  font-size : 16px;                  color : #000000;               } /* End Outlook Font Fix */ </style> <![endif]-->
+	<!--[if mso]> <style type="text/css"> /* Begin Outlook Font Fix */
+              body, table, td {
+                 font-family : Arial, helvetica, sans-serif;
+                 line-height : 115%;
+                 font-size : 16px;
+                 color : #000000;
+              } /* End Outlook Font Fix */ </style> <![endif]-->
 </head>
 
 <body bgcolor="#FFFFFF" text="#000000"
@@ -391,14 +458,8 @@
 		&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
 	</div>
 	<div style="font-size:0; line-height:0;display:none;">
-		<img src="http://click.email.transamerica.com/open.aspx?ffcb10-feed1d7570620d-fe5d1577726702797116-fe9415747d6c047b75-ff971272-fe661771776602757517-ffce15&d=40141&bmt=0"
-			width="1" height="1" alt="">
-		<img src="https://beacon.krxd.net/1x1_usermatch.gif?partner=LSIPcjxi_sfmc_1488060_sha256&partner_uid=7b9c375d1017b09a35cffab9a484699cdd72a9ae61dfcd0a1949bb8dd6240250"
-			width=0 height=0 style="display:none" />
-		<img src="https://beacon.krxd.net/1x1_usermatch.gif?partner=LSIPcjxi_sfmc_1488060_subid&partner_uid=31226803"
-			width=0 height=0 style="display:none" />
-		<img src="https://beacon.krxd.net/1x1_ad_impression.gif?confid=vlt2zqlxx&advertiserid=1488060&campaignid=Outlook_button_testing_again"
-			width=0 height=0 style="display:none;" />
+		<custom name="opencounter" type="tracking" />
+		<custom name="usermatch" type="tracking" />
 	</div>
 	<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
 		<tr>
@@ -454,7 +515,7 @@
 																													this
 																													message
 																													<a data-linkto="other"
-																														href="http://view.email.transamerica.com/?qs=6cd18b4a540af5f7c2d1b56d00f346e46e7ee7a827fb286d48260448a13663bc99193041c86880485522ae3ddd6f3472f050c57dda4934586df994b9373cea033b327993ee729671"
+																														href="%%view_email_url%%"
 																														style="color:#000000;text-decoration:underline;font-weight:normal;line-height:100%;"
 																														title="online">online</a></span>
 																											</div>
@@ -889,12 +950,9 @@
 																													</td>
 																												</tr>
 																											</table>
-																											<!--<![endif]-->
-
-																											<!-- THIS SECOND CODE BLOCK IS THE HTML BUTTON FOR OUTLOOK ONLY -->
-
-																											<!--[if mso]> <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left">   <tr>     <td>       <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.transamerica.com" style="height:40px;v-text-anchor:middle;width:240px;" arcsize="50%" strokecolor="#ffffff" fillcolor="#000000">         <w:anchorlock/>         <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%; border-collapse:collapse;">           <tr>               
-<td align="center" bgcolor="#000000" valign="middle" style="color: #ffffff; background-color: #000000; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal;" class="cta-btn-primary">Primary CTA &nbsp;&nbsp; → &nbsp;</td>             </tr>           </table>         </v:roundrect>       </td>     </tr>   </table>   <![endif]-->
+																											Old outlook
+																											button was
+																											here
 
 																										</td>
 																									</tr>
@@ -936,8 +994,20 @@
 
 																											<!-- THIS SECOND CODE BLOCK IS THE HTML BUTTON FOR OUTLOOK ONLY -->
 
-																											<!--[if mso]> <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left">   <tr>     <td>       <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.transamerica.com" style="height:40px;v-text-anchor:middle;width:240px;" arcsize="50%" strokecolor="#000000" fillcolor="#ffffff">         <w:anchorlock/>         <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%; border-collapse:collapse;">           <tr>               
-<td align="center" bgcolor="#ffffff" valign="middle" style="color: #000000; background-color: #ffffff; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal;" class="cta-btn-secondary">                   Secondary CTA &nbsp;&nbsp; → &nbsp;               </td>             </tr>           </table>         </v:roundrect>       </td>     </tr>   </table>   <![endif]-->
+																											<!--[if mso]>
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left">
+  <tr>
+    <td>
+      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.transamerica.com" style="height:40px;v-text-anchor:middle;width:240px;" arcsize="50%" strokecolor="#000000" fillcolor="#ffffff">
+        <w:anchorlock/>
+        <center style="color:#000000 !important;font-family:Arial,sans-serif;font-size:14px;">
+          Secondary CTA &nbsp;&nbsp; → &nbsp;
+        </center>
+      </v:roundrect>
+    </td>
+  </tr>
+</table>
+<![endif]-->
 
 																										</td>
 																									</tr>
@@ -990,8 +1060,20 @@
 
 																											<!-- THIS SECOND CODE BLOCK IS THE HTML BUTTON FOR OUTLOOK ONLY -->
 
-																											<!--[if mso]> <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left">   <tr>     <td>       <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.transamerica.com" style="height:45px;v-text-anchor:middle;width:240px;" arcsize="50%" strokecolor="#ffffff" fillcolor="#000000">         <w:anchorlock/>         <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%; border-collapse:collapse;">           <tr>             <td align="center" valign="middle" style="width: 60px; padding-right: 10px;">                 
-<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/37e0bc3e-37c6-4bfe-87f0-d96f51b90e19.png" alt="Icon" width="20" height="20" style="display: block; border: 0;">               </td>               <td align="center" bgcolor="#000000" valign="middle" style="color: #ffffff; background-color: #000000; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal;" class="cta-btn-primary">Primary CTA icon&nbsp;&nbsp; → nbsp;</td>             </tr>           </table>         </v:roundrect>       </td>     </tr>   </table>   <![endif]-->
+																											<!--[if mso]>
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left">
+  <tr>
+    <td>
+      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.transamerica.com" style="height:40px;v-text-anchor:middle;width:240px;" arcsize="50%" strokecolor="#ffffff" fillcolor="#000000">
+        <w:anchorlock/>
+        <center style="color:#ffffff !important;font-family:Arial,sans-serif;font-size:14px;">
+          Primary CTA &nbsp;&nbsp; → &nbsp;
+        </center>
+      </v:roundrect>
+    </td>
+  </tr>
+</table>
+<![endif]-->
 																										</td>
 																									</tr>
 																								</table><!----><!---->
@@ -1043,8 +1125,20 @@
 
 																											<!-- THIS SECOND CODE BLOCK IS THE HTML BUTTON FOR OUTLOOK ONLY -->
 
-																											<!--[if mso]> <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left">   <tr>     <td>       <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.transamerica.com" style="height:45px;v-text-anchor:middle;width:240px;" arcsize="50%" strokecolor="#000000" fillcolor="#ffffff">         <w:anchorlock/>         <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%; border-collapse:collapse;">           <tr>             <td align="center" valign="middle" style="width: 60px; padding-right: 10px;">                 
-<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/4f309fe8-b0ef-4d22-868f-4b49ab542770.png" alt="Icon" width="20" height="20" style="display: block; border: 0;">               </td>               <td  align="center" bgcolor="#ffffff" valign="middle" style="color: #000000; background-color: #ffffff; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal;" class="cta-btn-white">Secondary CTA icon&nbsp;&nbsp; → &nbsp;</td>             </tr>           </table>         </v:roundrect>       </td>     </tr>   </table>   <![endif]-->
+																											<!--[if mso]>
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left">
+  <tr>
+    <td>
+      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.transamerica.com" style="height:40px;v-text-anchor:middle;width:240px;" arcsize="50%" strokecolor="#000000" fillcolor="#ffffff">
+        <w:anchorlock/>
+        <center style="color:#000000 !important;font-family:Arial,sans-serif;font-size:14px;">
+          Secondary CTA &nbsp;&nbsp; → &nbsp;
+        </center>
+      </v:roundrect>
+    </td>
+  </tr>
+</table>
+<![endif]-->
 																										</td>
 																									</tr>
 																								</table><!----><!---->
@@ -1323,7 +1417,31 @@
 		</tr>
 		<tr>
 			<td valign="top">
-
+				<div style="line-height: 115%; font-size:12px; color: #ffffff; Margin-bottom: 12px;">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aperiam repellat vel ipsam atque minima. Optio aliquam autem culpa, quaerat quam temporibus consectetur ipsa quas voluptatem ipsum! Quam, animi ullam
+				</div>
+				
+				<div style="line-height: 115%; font-size:12px; color: #ffffff; Margin-bottom: 12px;">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aperiam repellat vel ipsam atque minima. Optio aliquam autem culpa, quaerat quam temporibus consectetur ipsa quas voluptatem ipsum! Quam, animi ullam
+				</div>
+				
+				<div style="line-height: 115%; font-size:12px; color: #ffffff; Margin-bottom: 12px;">
+					<strong>%%Member_Busname%%</strong><br>
+					%%Member_Addr%%, %%Member_City%%, %%Member_State%% %%Member_PostalCode%%
+				</div>
+				
+				<div style="line-height: 115%; font-size:12px; color: #ffffff; Margin-bottom: 12px;">
+					<strong>Please do not reply to this email.</strong>
+				</div>
+				
+				<div style="line-height: 115%; font-size:12px; color: #ffffff; Margin-bottom: 12px;">
+					<a href="%%profile_center_url%%" style="color:#ffffff;">Click here</a> to update your email preferences.
+				</div>
+				
+				<div style="line-height: 115%; font-size:12px; color: #ffffff;">
+					TESTING #######<br>
+					&copy; %%xtyear%% Transamerica Corporation. All Rights Reserved.</div>
+				
 			</td>
 		</tr>
 	</table>
